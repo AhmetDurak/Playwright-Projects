@@ -53,6 +53,8 @@ public class Tests
         await loginPage.ClickLogin();
         await loginPage.Login("admin", "password");
         var isExist = await loginPage.isEmployeeDetailsExists();
+
+        //This line is updated over main branch
         Assert.IsTrue(isExist);
     }
 }
