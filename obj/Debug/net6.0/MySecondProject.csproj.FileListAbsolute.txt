@@ -410,3 +410,7 @@
 /home/ahmetdrk/PlaywrightTests/MySecondProject/obj/Debug/net6.0/ref/MySecondProject.dll
 /home/ahmetdrk/PlaywrightTests/MySecondProject/obj/Debug/net6.0/MySecondProject.pdb
 /home/ahmetdrk/PlaywrightTests/MySecondProject/obj/Debug/net6.0/MySecondProject.genruntimeconfig.cache
+/home/ahmetdrk/PlaywrightTests/MySecondProject/bin/Debug/net6.0/FluentAssertions.dll
+/home/ahmetdrk/PlaywrightTests/MySecondProject/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/home/ahmetdrk/PlaywrightTests/MySecondProject/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/ahmetdrk/PlaywrightTests/MySecondProject/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll

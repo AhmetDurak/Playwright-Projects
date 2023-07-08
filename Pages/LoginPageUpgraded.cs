@@ -12,10 +12,19 @@ public class LoginPageUpgraded
     private ILocator _txtPassword => _page.Locator("#Password");
     private ILocator _btnLogin => _page.Locator("text=Log in");
     private ILocator _lnkEmployeeDetails => _page.Locator("text='Employee Details'");
+    private ILocator _lnkEmplyeeList => _page.Locator("text='Employee List'");
 
-
-
-    public async Task ClickLogin() => await _lnkLogin.ClickAsync();
+    [System.Obsolete]
+    public async Task ClickLogin()
+    {
+        await _page.RunAndWaitForNavigationAsync(async () =>
+        {
+            await _lnkLogin.ClickAsync();
+        }, new PageRunAndWaitForNavigationOptions()
+        {
+            UrlString = "**/Account/Login"
+        });
+    }
     public async Task Login(string userName, string password)
     {
         await _txtUserName.FillAsync(userName);
@@ -23,4 +32,6 @@ public class LoginPageUpgraded
         await _btnLogin.ClickAsync();
     }
     public async Task<bool> isEmployeeDetailsExists() => await _lnkEmployeeDetails.IsVisibleAsync();
+    public async Task ClickEmployeeList() => await _lnkEmplyeeList.ClickAsync();
+
 }
